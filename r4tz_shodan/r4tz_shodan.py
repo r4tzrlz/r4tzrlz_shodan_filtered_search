@@ -1,7 +1,8 @@
 import shodan
+import const4nts
 
 # Configs
-SHODAN_API_KEY = "no so fast cowboy"
+SHODAN_API_KEY = const4nts.SHODAN_API_KEY
 api = shodan.Shodan(SHODAN_API_KEY)
 filteredList = []
 searchTerm = ''
@@ -12,7 +13,7 @@ def printOptions():
     print('[1] Search webcamxp')
     print('[2] Search webcam')
     print('[3] Other...')
-    print('[4] Exit')
+    print('[4] Fuk of')
     print('')
 
 def printBanner():
@@ -25,7 +26,7 @@ def printBanner():
     print('         \/         \/                 \/        \/        \/        \/')
     print('--------------------------------------------------------------------------')
     print('')
-    print('SHODAN API FILTERED SEARCH PYTHON by R4TZ')
+    print('SH0DAN API FILT3RED SEARCH PYTH0N by R4TZ')
     print('')
 
 
@@ -76,6 +77,7 @@ while not closeProgram:
 
         mainProgram()
     else:
+        print('See ya space c0wb0y...')
         break
 
 
